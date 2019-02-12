@@ -2,7 +2,7 @@ a solution to the codewars kata snail in Ruby
 
 My solution to the kata Snail on www.codewars.com
 
-This solution is considerably more verbose than many of the others but it was the first 4 kyu kata I've solved so I'm reasonably happy with it. I am posting it here for github practice.
+This solution is a bit more verbose than many of the others but it was the first 4 kyu kata I've solved so I'm reasonably happy with it. I am posting it here for github practice.
 
 #the problem 
 

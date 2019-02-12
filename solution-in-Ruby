@@ -1,0 +1,33 @@
+#a solution to snail in Ruby
+
+def snail(array)
+  array_copy = array.dup  
+  snail_arr = []
+
+  while true
+    #moves right
+    (array_copy[0].length).times {|i| snail_arr.push(array_copy[0].shift)}
+    #removes empty array
+    array_copy.shift
+
+    break if array_copy.flatten == []
+
+    #moves down
+    array_copy.each {|j| snail_arr.push(j.pop)}
+
+    break if array_copy.flatten == []
+
+    #moves left
+    (array_copy[-1].length).times {|l| snail_arr.push(array_copy[-1].pop)}
+
+    array_copy.pop
+
+    break if array_copy.flatten == []
+
+    #moves up
+    array_copy.reverse_each {|m| snail_arr.push(m.shift)}      
+         
+    break if array_copy.flatten == []
+  end
+  snail_arr
+end
